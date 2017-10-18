@@ -1,6 +1,6 @@
-### Welcome to IBM Blockchain Roadshow! 
+# Welcome to IBM Blockchain Roadshow! 
 
-# This tutorial will help you to create a local development environment which will be used during the workshop.
+## This tutorial will help you to create a local development environment which will be used during the workshop.
 
 **1. Prerequisites**
 
