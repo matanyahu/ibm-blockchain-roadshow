@@ -110,6 +110,10 @@
 ###### <br>========= All GOOD, BYFN execution completed =========== _
 
 - You may now push ctrl+c to exit the status screen.
+- Before turning off a Vagrant box, make sure that you shut down your Hyperledger Fabric network:
+
+> ./byfn.sh -m up
+
 - If you want to exit the vagrant box, type "exit" in the command line.
 - You may either suspend the VM or turn if off by typing one of the following commands :
 
