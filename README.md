@@ -1,4 +1,4 @@
-# Welcome to IBM Blockchain Roadshow! 
+# Welcome to IBM Blockchain Roadshow!
 
 ## This tutorial will help you to create a local development environment which will be used during the workshop.
 
@@ -10,20 +10,22 @@
 
 ### **2. Now let's create a Vagrant box (a virtual machine) which will be used as a sandbox nested on our PC for all Hyperledger Fabric tests**
 
-- Clone the current Hyperledger Fabric git repository: 
+- Clone the current Hyperledger Fabric git repository:
 
-> git clone https://github.com/hyperledger/fabric
+	```
+  git clone https://github.com/hyperledger/fabric
+	```
 
-- Go to the folder created by the repo: 
+- Go to the folder created by the repo:
 
 > cd fabric/devenv
 
-- run Vagrant box: 
+- run Vagrant box:
 
 > vagrant up
 
-- Go get coffee... this will take a few minutes. 
-- Once complete, you should be able to ssh into the Vagrant VM just created: 
+- Go get coffee... this will take a few minutes.
+- Once complete, you should be able to ssh into the Vagrant VM just created:
 
 > vagrant ssh
 
@@ -32,12 +34,12 @@
 
 ### **3. Let's now clone some useful scripts which will automate the process of downloading necessary binaries and Docker images which will be used during the workshop**
 
-- Inside Vagrant box, run the following script: 
+- Inside Vagrant box, run the following script:
 
 > curl -sSL https://goo.gl/Q3YRTi | bash
 
 - This should create a new folder called /bin with necessary binaries and download Docker images for Hyperledger Fabric.
-- Now, let's create an environment variable so that binaries in /bin folder can be picked up without fully qualifying the path to each binary: 
+- Now, let's create an environment variable so that binaries in /bin folder can be picked up without fully qualifying the path to each binary:
 
 > export PATH=/opt/gopath/src/github.com/hyperledger/fabric/bin:$PATH
 
@@ -52,7 +54,7 @@
 
 > docker images
 
-###### REPOSITORY                    TAG                  IMAGE ID             CREATED              SIZE 
+###### REPOSITORY                    TAG                  IMAGE ID             CREATED              SIZE
 ###### hyperledger/fabric-ca          latest              17f38f1c8e80        13 days ago         238MB
 ###### hyperledger/fabric-ca          x86_64-1.0.3        17f38f1c8e80        13 days ago         238MB
 ###### hyperledger/fabric-tools       latest              ac1f4a1e58a6        2 weeks ago         1.33GB
@@ -75,12 +77,12 @@
 
 ### **4. If everything went smoothly, we should now be able to run a test Hyperledger Fabric network on our Vagrant box. It is not necessary that you understand what is happening behind the scenes as everything will be explained again during the workshop.**
 
-- Clone Hyperledger Fabric Samples to your Vagrant box: 
+- Clone Hyperledger Fabric Samples to your Vagrant box:
 
 > git clone https://github.com/hyperledger/fabric-samples
 
 - Go to **fabric-samples/first-network/**
-- Now, let's run an automated script that will firstly generate some necessary crypto for our network: 
+- Now, let's run an automated script that will firstly generate some necessary crypto for our network:
 
 > ./byfn.sh -m generate
 
@@ -90,7 +92,7 @@
 ###### Continue (y/n)? y
 ###### proceeding ...
 
-- Once the crypto material is generated, let's set up a sample network: 
+- Once the crypto material is generated, let's set up a sample network:
 
 > ./byfn.sh -m up
 
@@ -122,7 +124,3 @@
 
 
 ## Congratulations! You are now ready for IBM Blockchain Roadshow!
-
-
-
-
