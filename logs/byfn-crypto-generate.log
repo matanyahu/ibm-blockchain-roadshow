@@ -1,0 +1,39 @@
+Generating certs and genesis block for with channel 'mychannel' and CLI timeout of '10000'
+Continue (y/n)? y
+proceeding ...
+/opt/gopath/src/github.com/hyperledger/fabric/bin/cryptogen
+
+##########################################################
+##### Generate certificates using cryptogen tool #########
+##########################################################
+org1.example.com
+org2.example.com
+
+/opt/gopath/src/github.com/hyperledger/fabric/bin/configtxgen
+##########################################################
+#########  Generating Orderer Genesis block ##############
+##########################################################
+2017-10-26 08:53:12.944 UTC [common/configtx/tool] main -> INFO 001 Loading configuration
+2017-10-26 08:53:13.240 UTC [common/configtx/tool] doOutputBlock -> INFO 002 Generating genesis block
+2017-10-26 08:53:13.249 UTC [common/configtx/tool] doOutputBlock -> INFO 003 Writing genesis block
+
+#################################################################
+### Generating channel configuration transaction 'channel.tx' ###
+#################################################################
+2017-10-26 08:53:13.418 UTC [common/configtx/tool] main -> INFO 001 Loading configuration
+2017-10-26 08:53:13.452 UTC [common/configtx/tool] doOutputChannelCreateTx -> INFO 002 Generating new channel configtx
+2017-10-26 08:53:13.455 UTC [common/configtx/tool] doOutputChannelCreateTx -> INFO 003 Writing new channel tx
+
+#################################################################
+#######    Generating anchor peer update for Org1MSP   ##########
+#################################################################
+2017-10-26 08:53:13.614 UTC [common/configtx/tool] main -> INFO 001 Loading configuration
+2017-10-26 08:53:13.632 UTC [common/configtx/tool] doOutputAnchorPeersUpdate -> INFO 002 Generating anchor peer update
+2017-10-26 08:53:13.639 UTC [common/configtx/tool] doOutputAnchorPeersUpdate -> INFO 003 Writing anchor peer update
+
+#################################################################
+#######    Generating anchor peer update for Org2MSP   ##########
+#################################################################
+2017-10-26 08:53:13.756 UTC [common/configtx/tool] main -> INFO 001 Loading configuration
+2017-10-26 08:53:13.771 UTC [common/configtx/tool] doOutputAnchorPeersUpdate -> INFO 002 Generating anchor peer update
+2017-10-26 08:53:13.773 UTC [common/configtx/tool] doOutputAnchorPeersUpdate -> INFO 003 Writing anchor peer update

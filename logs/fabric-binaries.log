@@ -1,0 +1,201 @@
+ubuntu@hyperledger-devenv:5226188:/opt/gopath/src/github.com/hyperledger/fabric$ curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap-1.0.3.sh | bash
+===> Downloading platform binaries
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 22.6M  100 22.6M    0     0  1731k      0  0:00:13  0:00:13 --:--:--  717k
+===> Pulling fabric Images
+==> FABRIC IMAGE: peer
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-peer
+d5c6f90da05d: Pull complete 
+1300883d87d5: Pull complete 
+c220aa3cfc1b: Pull complete 
+2e9398f099dc: Pull complete 
+dc27a084064f: Pull complete 
+87675a6d4030: Pull complete 
+93e601aafda8: Pull complete 
+da5763b74abb: Pull complete 
+a36ac2d9042c: Pull complete 
+069ddc845485: Pull complete 
+Digest: sha256:e9b5ab9a4fab2454c3568e3b3a0bd1cd9d3ab4032dc84128558dd625522ce063
+Status: Downloaded newer image for hyperledger/fabric-peer:x86_64-1.0.3
+==> FABRIC IMAGE: orderer
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-orderer
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+da5763b74abb: Already exists 
+b0c27c966818: Pull complete 
+6d2ce333cf47: Pull complete 
+Digest: sha256:52f2a03f183e0c4bd6f23d1a2d64e909b317eced8c82b30179fa2dccb66b2c14
+Status: Downloaded newer image for hyperledger/fabric-orderer:x86_64-1.0.3
+==> FABRIC IMAGE: couchdb
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-couchdb
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Pull complete 
+c90d7a44426d: Pull complete 
+9767b1c8440b: Pull complete 
+b9b680c73863: Pull complete 
+794bd066a794: Pull complete 
+8c0c0554497f: Pull complete 
+f846513fcc7f: Pull complete 
+f27e7e0725f6: Pull complete 
+28de754f25d2: Pull complete 
+1163236bd81f: Pull complete 
+2e326e5cd728: Pull complete 
+d5556b696042: Pull complete 
+Digest: sha256:c0fcb30ec5e524a38cf915560b547473686e03abfd6536b8464bd0db9e21cac0
+Status: Downloaded newer image for hyperledger/fabric-couchdb:x86_64-1.0.3
+==> FABRIC IMAGE: ccenv
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-ccenv
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Already exists 
+c90d7a44426d: Already exists 
+9767b1c8440b: Already exists 
+b9b680c73863: Already exists 
+5404ebc6def5: Pull complete 
+2fa2651562e8: Pull complete 
+6ba54afd1149: Pull complete 
+Digest: sha256:eeea692e9dd3c11109c7fb5eaea6e909692123d61bd7c291d5480f6154286a59
+Status: Downloaded newer image for hyperledger/fabric-ccenv:x86_64-1.0.3
+==> FABRIC IMAGE: javaenv
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-javaenv
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Already exists 
+c90d7a44426d: Already exists 
+9767b1c8440b: Already exists 
+b9b680c73863: Already exists 
+956eacff7e9d: Pull complete 
+8959d9f11451: Pull complete 
+b8ca2bdc04ea: Pull complete 
+bdef492dc865: Pull complete 
+c6ac15f7ac87: Pull complete 
+a890048a0ee6: Pull complete 
+f7f10e1debab: Pull complete 
+dc456145aab3: Pull complete 
+Digest: sha256:115f7a94c7cac9fd0f3c347d5112961cbdb430e393dca5227abcc099a7f9786e
+Status: Downloaded newer image for hyperledger/fabric-javaenv:x86_64-1.0.3
+==> FABRIC IMAGE: kafka
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-kafka
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Already exists 
+c90d7a44426d: Already exists 
+9767b1c8440b: Already exists 
+b9b680c73863: Already exists 
+2fb70b8d48bb: Pull complete 
+bb802550da73: Pull complete 
+121d0ecdc05d: Pull complete 
+Digest: sha256:b85cabed894dc081cbc6dc4f64bcd464be054b03c5967ae88de6021392919811
+Status: Downloaded newer image for hyperledger/fabric-kafka:x86_64-1.0.3
+==> FABRIC IMAGE: zookeeper
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-zookeeper
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Already exists 
+c90d7a44426d: Already exists 
+9767b1c8440b: Already exists 
+b9b680c73863: Already exists 
+9751ec9198d3: Pull complete 
+7c403c2f95bc: Pull complete 
+ae49d17c7d62: Pull complete 
+a07f531f7fd1: Pull complete 
+Digest: sha256:87b57faa78a520b9ab227480b470973d95f030cbfe9b6b5e0d3f9272d467fb20
+Status: Downloaded newer image for hyperledger/fabric-zookeeper:x86_64-1.0.3
+==> FABRIC IMAGE: tools
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-tools
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Already exists 
+c90d7a44426d: Already exists 
+9767b1c8440b: Already exists 
+b9b680c73863: Already exists 
+920d21430ed5: Pull complete 
+d800c4c4f13f: Pull complete 
+ecf8dd4538dc: Pull complete 
+2fa6c3ac1a51: Pull complete 
+70dc02cc9c1d: Pull complete 
+Digest: sha256:43d3aaa657373cf5dcfbe3e976427123b31c77c96e5e952b3aa7aa40f7ffca0d
+Status: Downloaded newer image for hyperledger/fabric-tools:x86_64-1.0.3
+===> Pulling fabric ca Image
+==> FABRIC CA IMAGE
+
+x86_64-1.0.3: Pulling from hyperledger/fabric-ca
+aafe6b5e13de: Pull complete 
+0a2b43a72660: Pull complete 
+18bdd1e546d2: Pull complete 
+8198342c3e05: Pull complete 
+f56970a44fd4: Pull complete 
+e32b597e7839: Pull complete 
+a6e362fc71c4: Pull complete 
+54c5279b3e29: Pull complete 
+b8f97b1073e3: Pull complete 
+e40d81bf89ab: Pull complete 
+247490c5fb25: Pull complete 
+Digest: sha256:b3c32c060392cf797d051d43ffe6bedf9bf3765676270cd4130ecf10796a54f4
+Status: Downloaded newer image for hyperledger/fabric-ca:x86_64-1.0.3
+
+===> List out hyperledger docker images
+hyperledger/fabric-ca          latest              17f38f1c8e80        3 weeks ago         238MB
+hyperledger/fabric-ca          x86_64-1.0.3        17f38f1c8e80        3 weeks ago         238MB
+hyperledger/fabric-tools       latest              ac1f4a1e58a6        3 weeks ago         1.33GB
+hyperledger/fabric-tools       x86_64-1.0.3        ac1f4a1e58a6        3 weeks ago         1.33GB
+hyperledger/fabric-couchdb     latest              b2188fa55138        3 weeks ago         1.47GB
+hyperledger/fabric-couchdb     x86_64-1.0.3        b2188fa55138        3 weeks ago         1.47GB
+hyperledger/fabric-kafka       latest              9e2a425c9dd6        3 weeks ago         1.29GB
+hyperledger/fabric-kafka       x86_64-1.0.3        9e2a425c9dd6        3 weeks ago         1.29GB
+hyperledger/fabric-zookeeper   latest              3b50cfad9af3        3 weeks ago         1.3GB
+hyperledger/fabric-zookeeper   x86_64-1.0.3        3b50cfad9af3        3 weeks ago         1.3GB
+hyperledger/fabric-orderer     latest              fd1055ee597a        3 weeks ago         151MB
+hyperledger/fabric-orderer     x86_64-1.0.3        fd1055ee597a        3 weeks ago         151MB
+hyperledger/fabric-peer        latest              b7f253e87c0c        3 weeks ago         154MB
+hyperledger/fabric-peer        x86_64-1.0.3        b7f253e87c0c        3 weeks ago         154MB
+hyperledger/fabric-javaenv     latest              1d778fcc14c0        3 weeks ago         1.41GB
+hyperledger/fabric-javaenv     x86_64-1.0.3        1d778fcc14c0        3 weeks ago         1.41GB
+hyperledger/fabric-ccenv       latest              2e5898d8b21b        3 weeks ago         1.28GB
+hyperledger/fabric-ccenv       x86_64-1.0.3        2e5898d8b21b        3 weeks ago         1.28GB
+
