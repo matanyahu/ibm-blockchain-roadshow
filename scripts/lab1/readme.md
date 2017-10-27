@@ -148,7 +148,7 @@ Loaded creds file /opt/gopath/src/github.com/hyperledger/fabric/marbles/config/b
 
 - In your browser you do not need to enter a password or change the prefilled username of `admin`.
 
-![](/images/localhost2.png)
+![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/localhost2.png)
 
 
 - Next the set up panel should pop up. Ideally it will walk itself through the 3 stages of initial setup.
@@ -160,18 +160,18 @@ Loaded creds file /opt/gopath/src/github.com/hyperledger/fabric/marbles/config/b
 - Register Marble Owners - this step will create the marble owners you specified in the marbles configuration JSON file
 		- This can take awhile 1-2minutes. Check your console logs for progress.
 
-![](/images/localhost3.png)
+![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/localhost3.png)
 
 - Once you see this message you are good to go:
 
-![](/images/localhost4.png)
+![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/localhost4.png)
 
 - Open up your favorite browser and browse to [http://localhost:3001](http://localhost:3001) or your Bluemix www route.
     - If the site does not load, check your node console logs for the hostname/ip and port marbles is using.
 
 - Finally we can test the application. Click the "+" icon on one of your users in the "United Marbles" section
 
-	![](/images/use_marbles1.png)
+	![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/use_marbles1.png)
 
 - Fill out all the fields, then click the "CREATE" button
 - After a few seconds your new marble should have appeared.
@@ -180,7 +180,7 @@ Loaded creds file /opt/gopath/src/github.com/hyperledger/fabric/marbles/config/b
     - If not refresh the page
 - Now let’s delete a marble by dragging and dropping it into the trash can. It should disappear after a few seconds.
 
-	![](/images/use_marbles2.png)
+	![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/use_marbles2.png)
 
 - efresh the page to double check that your actions "stuck".
 - Use the search box to filter on marble owners or marble company names.  This is helpful when there are many companies/owners.
