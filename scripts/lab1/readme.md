@@ -148,30 +148,30 @@ Loaded creds file /opt/gopath/src/github.com/hyperledger/fabric/marbles/config/b
 
 - In your browser you do not need to enter a password or change the prefilled username of `admin`.
 
-![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/localhost2.png)
+![](https://github.com/IBM-Blockchain/marbles/raw/v4.0/doc_images/localhost2.png)
 
 
 - Next the set up panel should pop up. Ideally it will walk itself through the 3 stages of initial setup.
 
 - Enroll Admin - this step is communicating with your network's CA to verify the admin user credentials (enrollID/enrollSecret)
-		- If it fails double check the enrollID and enrollSecret fields in your blockchain credentials file
+- If it fails double check the enrollID and enrollSecret fields in your blockchain credentials file
 - Finding Chaincode - this step is looking for the marbles chaincode on your peer. It is using the chaincode ID found in your blockchain credentials file. If this is a brand new network it will not exist yet.
-		- If the chaincode was instantiated but it was unable to find it try the "Retry" button.
+- If the chaincode was instantiated but it was unable to find it try the "Retry" button.
 - Register Marble Owners - this step will create the marble owners you specified in the marbles configuration JSON file
-		- This can take awhile 1-2minutes. Check your console logs for progress.
+- This can take awhile 1-2minutes. Check your console logs for progress.
 
-![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/localhost3.png)
+![](https://github.com/IBM-Blockchain/marbles/raw/v4.0/doc_images/localhost3.png)
 
 - Once you see this message you are good to go:
 
-![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/localhost4.png)
+![](https://github.com/IBM-Blockchain/marbles/raw/v4.0/doc_images/localhost4.png)
 
 - Open up your favorite browser and browse to [http://localhost:3001](http://localhost:3001) or your Bluemix www route.
     - If the site does not load, check your node console logs for the hostname/ip and port marbles is using.
 
 - Finally we can test the application. Click the "+" icon on one of your users in the "United Marbles" section
 
-	![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/use_marbles1.png)
+![](https://github.com/IBM-Blockchain/marbles/raw/v4.0/doc_images/use_marbles1.png)
 
 - Fill out all the fields, then click the "CREATE" button
 - After a few seconds your new marble should have appeared.
@@ -180,7 +180,7 @@ Loaded creds file /opt/gopath/src/github.com/hyperledger/fabric/marbles/config/b
     - If not refresh the page
 - Now let’s delete a marble by dragging and dropping it into the trash can. It should disappear after a few seconds.
 
-	![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/use_marbles2.png)
+![](https://github.com/IBM-Blockchain/marbles/raw/v4.0/doc_images/use_marbles2.png)
 
 - Refresh the page to double check that your actions "stuck".
 - Use the search box to filter on marble owners or marble company names.  This is helpful when there are many companies/owners.
