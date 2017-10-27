@@ -182,7 +182,7 @@ Loaded creds file /opt/gopath/src/github.com/hyperledger/fabric/marbles/config/b
 
 	![](https://github.com/matanyahu/ibm-blockchain-roadshow/blob/master/scripts/lab1/images/use_marbles2.png)
 
-- efresh the page to double check that your actions "stuck".
+- Refresh the page to double check that your actions "stuck".
 - Use the search box to filter on marble owners or marble company names.  This is helpful when there are many companies/owners.
     - The pin icon will prevent that user from being filtered out by the search box.
 - Now lets turn on the special walk through. Click the "Settings" button near the top of the page.
