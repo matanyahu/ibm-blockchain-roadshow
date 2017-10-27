@@ -56,6 +56,12 @@ export PATH=/opt/gopath/src/github.com/hyperledger/fabric/bin:$PATH
 
 ### **3. Let's now clone Marbles repository**
 
+- Go to your **$HOME** folder and clone the repository from there:
+
+```
+cd $HOME
+```
+
 - Clone the current Marbles (v4.0) git repository:
 
 ```
