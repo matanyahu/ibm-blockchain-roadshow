@@ -374,7 +374,7 @@ services:
 ./11-chaincode-query.sh
 ```
 
-### **6. Shutting down and cleaning up the environment for the next excercise:**
+### **8. Shutting down and cleaning up the environment for the next excercise:**
 
 - Execute the teardown command
 
