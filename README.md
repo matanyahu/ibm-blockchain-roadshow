@@ -226,4 +226,4 @@ vagrant halt
 
 ## Congratulations! You are now ready for IBM Blockchain Roadshow!
 
-You may now want to go to [Lab 1](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab1) or [Lab 1](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab2)
+You may now want to go to [Lab 1](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab1), [Lab 2](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab2), or [Lab 3](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab3)
