@@ -95,6 +95,12 @@ busybox                        latest              54511612f1c4        4 weeks a
 
 ### **4. If everything went smoothly, we should now be able to run a test Hyperledger Fabric network on our Vagrant box. It is not necessary that you understand what is happening behind the scenes as everything will be explained again during the workshop.**
 
+- We will be executing all scripts $HOME folder, therefore, you may switch back to this folder before you continue further:
+
+```
+cd $HOME
+```
+
 - Clone Hyperledger Fabric Samples to your Vagrant box:
 
 	```
