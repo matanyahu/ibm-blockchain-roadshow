@@ -212,7 +212,7 @@ Deleted: sha256:615a1f5c119c07908015e5680d4c609d17f011cf7b1ee4dcb9336b74d8926bb5
 Deleted: sha256:eb7ddbd9c53f0106a97186a7bccf857b119d74eaa423cd06d89c195e677fda6c
 Deleted: sha256:73e1ad05e0e43a5805abff5dc13b5080132786427893fb715c3cb76433842630
 Deleted: sha256:710ed0193bd10591b4b468f17b228805b39e28b9fefa37fa7885fc181e24ce9a
-ubuntu@hyperledger-devenv:5226188:/opt/gopath/src/github.com/hyperledger/fabric/fabric-samples/first-network$ 
+ubuntu@hyperledger-devenv:5226188:/opt/gopath/src/github.com/hyperledger/fabric/fabric-samples/first-network$
 ```
 
 - If you want to exit the vagrant box, type "exit" in the command line.
@@ -225,3 +225,5 @@ vagrant halt
 
 
 ## Congratulations! You are now ready for IBM Blockchain Roadshow!
+
+You may now want to go to [Lab 1](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab1) or [Lab 1](https://github.com/matanyahu/ibm-blockchain-roadshow/tree/master/scripts/lab2)

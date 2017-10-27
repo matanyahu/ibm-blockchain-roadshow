@@ -211,3 +211,4 @@ docker rmi $(docker images -q "dev-*")
 ```
 
 ## Congratulations! You have now finished Lab 1!
+To return back to the main menu, click [here](https://github.com/matanyahu/ibm-blockchain-roadshow)
