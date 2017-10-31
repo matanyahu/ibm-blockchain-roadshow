@@ -2,11 +2,24 @@
 
 ## This tutorial will help you to create a local development environment which will be used during the workshop.
 
+### **0. Agenda***
+
+| Schedule | Description |
+| --- | --- |
+| 0:15 | Welcome and Introduction to the workshop |
+| 0:20 | Chapter 1 : Blockchain Explained |
+| 0:40 | Lab 1 : United Marbles - an Asset Management scenario |
+| 0:20 | Chapter 2 : Blockchain Explored |
+| 0:40 | Lab 2 : Setting up own blockchain network |
+| 0:20 | Chapter 3 : Blockchain Unchained |
+| 0:40 | Lab 3 : Writing and deploying own chaincode |
+
 ### **1. Prerequisites**
 
 - PC with a 64-bit processor and virtualization bit enabled (vt-x or similar), 8Gb of RAM and 30GB of available free space.
 - Oracle VirtualBox 5.x installed: https://www.virtualbox.org/wiki/Downloads
 - Vagrant installed: https://www.vagrantup.com/downloads.html
+
 
 ### **2. Now let's create a Vagrant box (a virtual machine) which will be used as a sandbox nested on our PC for all Hyperledger Fabric tests**
 
