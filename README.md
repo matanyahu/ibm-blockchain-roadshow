@@ -16,12 +16,13 @@
 
 ### **1. Prerequisites**
 
-- PC with a 64-bit processor and virtualization bit enabled (vt-x or similar), 8Gb of RAM and 30GB of available free space.
-- Oracle VirtualBox 5.x installed: https://www.virtualbox.org/wiki/Downloads
+- Access to the Internet
+- PC with a 64-bit processor and virtualization bit enabled (**vt-x** or similar), 8Gb of RAM and 30GB of available free space.
+- Oracle VirtualBox **5.0 or 5.1** installed (do not install version 5.2 yet): https://www.virtualbox.org/wiki/Downloads
 - Vagrant installed: https://www.vagrantup.com/downloads.html
+- Git installed: https://git-scm.com/downloads
 
-
-### **2. Now let's create a Vagrant box (a virtual machine) which will be used as a sandbox nested on our PC for all Hyperledger Fabric tests**
+### **2. Before we launch a local environment, let's download and modify Vagrant file in order to host a web app called Marble to our host:**
 
 - Clone the current Hyperledger Fabric git repository:
 
@@ -34,6 +35,14 @@
 	```
   cd fabric/devenv
 	```
+
+- Open **Vagrantfile** with your favourite editor. Add the following line of code in port forwarding area (you will see similar lines already written in for other communition ports such as 7050, 7051...) and save the file:
+
+  ```
+  config.vm.network :forwarded_port, guest: 3001, host: 3001, id: "marbles", host_ip: "localhost", auto_correct: true
+    ```
+
+### **3. Now let's create a Vagrant box (a virtual machine) which will be used as a sandbox nested on our PC for all Hyperledger Fabric tests**
 
 - run Vagrant box:
 
@@ -57,7 +66,7 @@
 - We will now install the Hyperledger Fabric platform-specific binaries. Inside Vagrant box, run the following script:
 
 	```
-  curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap-1.0.3.sh | bash
+  curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/release/scripts/bootstrap-1.0.4.sh | bash
 	```
 
 - You may read and compare logs on your machine with [this file](./logs/fabric-binaries.log)
@@ -114,7 +123,7 @@ busybox                        latest              54511612f1c4        4 weeks a
 cd $HOME
 ```
 
-- Clone Hyperledger Fabric Samples to your Vagrant box:
+- Clone Hyperledger Fabric Samples inside your Vagrant box:
 
 	```
   git clone https://github.com/hyperledger/fabric-samples
