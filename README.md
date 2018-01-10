@@ -2,18 +2,6 @@
 
 ## This tutorial will help you to create a local development environment which will be used during the workshop.
 
-### **0. Agenda***
-
-| Schedule | Description |
-| --- | --- |
-| 0:15 | Welcome and Introduction to the workshop |
-| 0:20 | Chapter 1 : Blockchain Explained |
-| 0:40 | Lab 1 : United Marbles - an Asset Management scenario |
-| 0:20 | Chapter 2 : Blockchain Explored |
-| 0:40 | Lab 2 : Setting up own blockchain network |
-| 0:20 | Chapter 3 : Blockchain Unchained |
-| 0:40 | Lab 3 : Writing and deploying own chaincode |
-
 ### **1. Prerequisites**
 
 - Access to the Internet
@@ -50,7 +38,6 @@
   vagrant up
 	```
 
-- You may read and compare logs from vagrant VM creation process on your machine with [this file](./logs/vagrant-up.log)
 - Go get coffee... this will take a few minutes.
 - Once complete, you should be able to ssh into the Vagrant VM just created:
 
@@ -66,7 +53,7 @@
 - We will now install the Hyperledger Fabric platform-specific binaries. Inside Vagrant box, run the following script:
 
 	```
-  curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/release/scripts/bootstrap-1.0.4.sh | bash
+  curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/release/scripts/bootstrap-1.0.5.sh | bash
 	```
 
 - You may read and compare logs on your machine with [this file](./logs/fabric-binaries.log)
